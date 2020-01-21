@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-image: url("./Visuels/Images/fondenbois.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    font-family: 'Tajawal', sans-serif;
+    color: #4F4F52;
+    cursor: url ("./Visuels/Images/select.png"), auto;
+    height: 100vh;
+    
+}
+.play-zone {
+  position: relative;
+}
+#eye {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  right: 100px;
+  top: 50%;
+
+}
+.bg-image {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#start-button {
+    box-sizing: border-box;
+    background: #D65719;
+    border: 5px solid #FFF8F8;
+    border-radius: 8px;
+    font-size: 60px;
+    width: 400px;
+    height: 100px;
+    color: white;
+
+}
+
+h1{
+    font-size: 130px;
+    
+}
+
+h2{
+    font-size: 48px;
+    font-weight: thin;
+}
+
+#div-button{
+    color: white;
+    font-size: 36px;
+}
+
+#div-button p {
+  margin-top: 10px;
+}
+
+#div-slogan {
+    width: 60%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+#score {
+  font-size: 55px;
+  background-color: rgba(0, 0, 0, 0.295);
+  padding: 10px;
+  color: #F3EEEE;
+  border-radius: 10%;
+  border : 2px solid white;
+}
+#circle1 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  rgba(0, 0, 0, 0.295);
+}
+
+#circle2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px dashed  white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  font-size: 30px;
+}
+
+.game-placeholder{
+  margin-top: -20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+.f-trad-placeholder {
+    opacity: 0.78;
+    background: #FFFBFB;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fas {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  position: absolute;
+  right: 10%;
+  top:43%;
+}
+
+.fas:hover {
+  color:#4F4F52;
+}
+.play-zone{
+  position: relative;
+}
+.disclosure-lit-trad {
+  opacity: 0.78;
+  background: rgba(0, 0, 0, 0.9);
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: lighter;
+  width: 50%;
+  position: absolute;
+  left: calc(25%);
+  color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.answer-placeholder {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.295);
+    box-shadow: inset 0 1px 3px 2px rgba(0,0,0,0.72);
+    border-radius: 44px;
+    height: 180px;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.wrong-answer {
+    animation: shake 1.5s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+
+.block {
+    background: #D65719;
+    border: 3px solid #F3EEEE;
+    border-radius: 44px;
+    font-size: 72px;
+    color: #FBD1D1;
+    text-align: center;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+}
+
+.hint {
+  visibility: hidden;
+  font-size: 20px;
+}
+
+.words-placeholder {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  background: #2e4b86;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: "Montserrat", "sans-serif";
+}
+
+#container:hover .blue {
+  transform: translateX(200px) translateY(-38px);
+}
+
+#container:hover .darkBlue {
+  transform: translateX(220px) translateY(24px);
+}
+
+.button {
+  transform: translateY(-100px);
+  cursor: pointer;
+}
+
+.blue {
+  transform: translateX(175px) translateY(-38px);
+  transition: all 0.5s ease-in-out;
+}
+
+.darkBlue {
+  transform: translateX(178px) translateY(22px);
+  transition: all 0.75s ease-in-out;
+}
+
+.text {
+  position: absolute;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  transform: translateX(90px) translateY(11px);
+}
+View Compiled 
+
+
+Resources */
