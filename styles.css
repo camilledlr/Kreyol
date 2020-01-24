@@ -11,8 +11,7 @@ body {
     background-position: 0 0;
     font-family: 'Tajawal', sans-serif;
     color: #4F4F52;
-    height: 100vh;
-    
+    height: 100%;
 }
 
 /* Home */
@@ -482,7 +481,7 @@ top: -80%;
   height: auto;
 }
 #list-exp {
-  height: auto;
+  height: 100vh;
   background-color: rgba(17, 16, 16, 0.384);
   padding: 7vh;
 }

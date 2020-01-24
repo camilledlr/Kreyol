@@ -274,7 +274,7 @@ function shuffle(array) {
 // Chronometer
 class Chronometer {
         constructor() {
-          this.currentTime = 5 ;
+          this.currentTime = 180;
           this.intervalId;
         }
       
