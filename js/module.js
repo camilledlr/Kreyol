@@ -288,7 +288,7 @@ class Chronometer {
             if (time == 0) { 
               this.stopClick();
               localStorage.setItem("Total", scoreTot);
-              window.location = "./endGame.html"
+              window.location = "endGame.html"
             };
             }, 1000 );
         }
