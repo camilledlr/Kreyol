@@ -513,7 +513,7 @@ top: -80%;
   height: auto;
 }
 #list-exp {
-  height: 100vh;
+  height: autogit ;
   background-color: rgba(17, 16, 16, 0.384);
   padding: 7vh;
 }
