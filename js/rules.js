@@ -7,18 +7,22 @@ function hideElement (element) {
 function displayElement (element) {
     element.classList.remove("hide");
 }
+function displayElement2 (element) {
+    element.style.display = "inline";
+}
 var intro = document.querySelector("#intro");
 var consigne = document.querySelector("#consigne");
 var vidéo = document.querySelector("video");
+var explanations = document.querySelectorAll(".icn-explanation")
 
 setTimeout(function(){
     hideElement(intro);
     displayElement(consigne);
-    displayElement(vidéo);
 },5000)
 
 setTimeout(function(){
     hideElement(vidéo);
+    explanations.forEach(exp => displayElement2(exp));
 },15000)
 
 document.getElementById("skip-rules").onclick = function (){
