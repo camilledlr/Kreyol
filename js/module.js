@@ -240,7 +240,7 @@ function shuffle(array) {
 // Chronometer
 class Chronometer {
         constructor() {
-          this.currentTime = 10;
+          this.currentTime = 90;
           this.intervalId;
         }
       
@@ -249,7 +249,7 @@ class Chronometer {
             let time = this.currentTime --;
             let minutes = (this.twoDigitsNumber(this.getMinutes()));
             let seconds = (this.twoDigitsNumber (this.getSeconds()));
-            if (time <= 4){ clbk1(time)
+            if (time < 4){ clbk1(time)
             } else { clbk2(minutes, seconds) };
             if (time == 0) { 
               this.stopClick();
