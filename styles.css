@@ -170,7 +170,7 @@ width: 100%;
 #bg-rules {
   box-sizing: border-box;
 justify-content: space-between;
-padding : 5%;
+padding : 3%;
 background-color: rgba(17, 16, 16, 0.521);
 }
 
@@ -187,7 +187,7 @@ background-color: rgba(17, 16, 16, 0.521);
 video {
   width: 50%;
   border-radius: 10%;
-  margin: 0 auto;
+  margin: 5vh auto 0;
 }
 
 .div-explanation{
@@ -223,7 +223,7 @@ video {
   color: white;
   font-size: 30px;
   padding: 0.5%;
-  margin-bottom: 0.5%;
+  margin-bottom: 1%;
 }
 .footer-rules p {
   font-size: 25px;
@@ -231,7 +231,12 @@ video {
 .footer-rules div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: 20vh;;
+}
+.footer-rules{
+  height: 20vh;
+
 }
 
 /* Game */

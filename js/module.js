@@ -57,15 +57,6 @@ var dndHandler = {
     }
   },
 
-  //     wordsPlaceholder.ondrop = function() {
-  //       let draggedElement = dndHandler.draggedElement,
-  //       clonedElement = draggedElement.cloneNode(true);
-  //       wordsPlaceholder.appendChild(clonedElement);
-  //       draggedElement.parentNode.removeChild(draggedElement);
-  //       dndHandler.moveBlocks(clonedElement); // Nouvelle application des événements qui ont été perdus lors du cloneNode()
-  //     };
-  //   };
-  // },
 
   moveBlocks: function(element) {
     element.ondragstart = function(e) {
@@ -152,14 +143,8 @@ document.querySelector(".fa-forward").onclick = function(){
   setTimeout(refreshPage,3000);
 }
 
-  // block.onmouseout = function() {
-  //       block.querySelector(".hint").style.visibility = "hidden";
-  //     };
-// New game
-
 function refreshPage () {
         fTradPlaceholder.innerHTML ="";
-        // words.forEach(word.innerHTML ="") ;
         scoreSeq = 2 ;
         answerPlaceholder.innerHTML = "";
         answerPlaceholder.classList.toggle("block");
@@ -174,7 +159,6 @@ function refreshPage () {
 var newCollection = shuffle(collection);
 var questionCollection = [];
 var currentExpression;
-// console.log ("question:",questionCollection,"new:", newCollection, "-------------");
 
 function addBlocks () {
   let nbMots = currentExpression.mots.length;
@@ -194,17 +178,6 @@ function addBlocks () {
     newmots.shift();
   }) 
   }
-
-// function fillBlocks (){
-//   let newmots = shuffle(currentExpression.mots);
-//   console.log(newmots);
-//   console.log(newmots[0]);
-//   console.log(newmots[0].mot);
-//   blocks.forEach(block => {
-//     block.innerHTML = `${newmots[0].mot}`;
-//     newmots.shift();
-//   })
-// };
 
 function fillGrid (){
   let nbMots = currentExpression.mots.length;
@@ -253,13 +226,6 @@ function fillPage (){
 }
 
 
-// {
-//   crExp: "Anba latè, pa ni plézi ",
-//   litTrad: "Sous terre, il n'y a pas de plaisir.",
-//   frTrad: "Carpe Diem",
-//   seqMots: ["anba","latè", "pa", "ni", "plézi"],
-//   mots: [{ mot: "Anba", indice: "Sous" },{ mot: "Latè", indice: "La terre" },{ mot: "Pa", indice: "Marque la négation" },{ mot: "Ni", indice: "Il y a" },{ mot: "Plézi", indice: "Plaisir" }]
-// },
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
   while (0 !== currentIndex) {
@@ -274,7 +240,7 @@ function shuffle(array) {
 // Chronometer
 class Chronometer {
         constructor() {
-          this.currentTime = 180;
+          this.currentTime = 10;
           this.intervalId;
         }
       
@@ -283,7 +249,7 @@ class Chronometer {
             let time = this.currentTime --;
             let minutes = (this.twoDigitsNumber(this.getMinutes()));
             let seconds = (this.twoDigitsNumber (this.getSeconds()));
-            if (time <= 5){ clbk1(time)
+            if (time <= 4){ clbk1(time)
             } else { clbk2(minutes, seconds) };
             if (time == 0) { 
               this.stopClick();
@@ -330,6 +296,7 @@ class Chronometer {
         circle1.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
         circle.style.fontWeight = "bolder";
         circle.style.fontSize = "60px";
+        document.querySelector("#countdown").play();
     }
       
       

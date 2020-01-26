@@ -23,7 +23,7 @@ setTimeout(function(){
 setTimeout(function(){
     hideElement(vidéo);
     explanations.forEach(exp => displayElement2(exp));
-},15000)
+},5000)
 
 document.getElementById("skip-rules").onclick = function (){
     window.location = "./jeu.html"
