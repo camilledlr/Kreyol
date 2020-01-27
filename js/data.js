@@ -35,7 +35,7 @@ var collection = [
       frTrad: "Premier arrivé, premier servi.",
       seqMots: ["bèf","douvan","bwè","dlo","klè"],
       mots: [{mot: "Bèf", indice: "Boeuf"}, { mot: "Douvan", indice: "Devant" }, { mot: "Bwè", indice: "Boire" }, { mot: "Dlo", indice: "Eau" }, { mot: "Klè", indice: "Claire" }]
-    }gg
+    },
 
   // {
   //   crExp: "Kannari ka di chodiè bonday nwè ",
