@@ -1,4 +1,4 @@
-// function delaydisplay;
+var level = localStorage.getItem("level");
 
 function hideElement (element) {
     element.classList.add("hide");
@@ -27,7 +27,7 @@ setTimeout(function(){
 
 document.getElementById("skip-rules").onclick = function (){
     console.log("hého");
-    let level = localStorage.getItem("level");
+    console.log(level);
     if (level == "Facile") window.location = "./jeuFacile.html";
     if (level == "Moyen") window.location = "./jeuMoyen.html";
     if (level == "Difficile") window.location = "./jeuDifficile.html";
