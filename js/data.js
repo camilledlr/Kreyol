@@ -13,13 +13,7 @@ var collection = [
     seqMots: ["wi","pa", "ni", "poutchi"],
     mots: [{ mot: "Wi", indice: "Oui" },{ mot: "Pa", indice: "Marque la négation" },{ mot: "Ni", indice: "a (avoir)" },{ mot: "Poutchi", indice: "Pourquoi" }]
   },
-  {
-    crExp: "A an lot soley ",
-    litTrad: "À un autre soleil.",
-    frTrad: "Au revoir.",
-    seqMots: ["a","an", "lot", "soley"],
-    mots: [{ mot: "A", indice: "À" },{ mot: "An", indice: "Un" },{ mot: "Lot", indice: "Autre" },{ mot: "Soley", indice: "Soleil"}]
-  },
+
   {
     crExp:"Ravèt pa ni rézon douvan poul ",
       litTrad: "Le cafard n'a pas raison face à la poule.",
@@ -34,35 +28,94 @@ var collection = [
       seqMots: ["rand","sèvis","ka","ba","mal", "do"],
       mots: [{mot: "Rand", indice: "Rendre"}, { mot: "Sèvis", indice: "Service" }, { mot: "Ka", indice: "Marque du présent indicatif" }, { mot: "Ba", indice: "Donne" }, { mot: "Mal", indice: "Mal" }, { mot: "Do", indice: "Dos"}]
     },
+
   {
     crExp: "Bèf douvan bwè dlo klè ",
       litTrad: "Les boeufs devant boivent de l'eau claire.",
       frTrad: "Premier arrivé, premier servi.",
       seqMots: ["bèf","douvan","bwè","dlo","klè"],
       mots: [{mot: "Bèf", indice: "Boeuf"}, { mot: "Douvan", indice: "Devant" }, { mot: "Bwè", indice: "Boire" }, { mot: "Dlo", indice: "Eau" }, { mot: "Klè", indice: "Claire" }]
-    }
-  ]
+    },
 
+  {
+    crExp: "Kannari ka di chodiè bonday nwè ",
+      litTrad: "C'est la casseriole qui dit à la chaudière que ses fesses sont noires.",
+      frTrad: "C'est l'hôpital qui se fout de la charité",
+      seqMots: ["kannari","ka","di","chodiè","bonda'y", "nwè"],
+      mots: [{mot: "Kannari", indice: "Boeuf"}, { mot: "Ka", indice: "(marque présent indicatif)" }, { mot: "Di", indice: "Dit" }, { mot: "Chodiè", indice: "Chaudière" }, { mot: "Bonda'y", indice: "Ses fesses" }, { mot: "Nwè", indice: "Noir" } ]
+    },
+  ];
 
-// function getRandom(min,max) {
-//   min = Math.ceil(min);
-//   max = Math.floor(max);
-//   return Math.floor(Math.random() * (max - min)) + min;
-// }
-
-// function fillPage () {
-//   let i = getRandom(0,collection.length);
-//   console.log(collection[i].crExp);
-//   console.log(collection[i].frTrad);
-//   console.log(collection[i].litTrad);
-//   console.log(collection[i].seqMots);
-//   collection[i].mots.forEach(mot => console.log (mot.mot));
-//   collection[i].mots.forEach(mot => console.log (mot.indice));
+var collectionFacile = [
+  {
+    crExp: "A an lot soley ",
+    litTrad: "À un autre soleil.",
+    frTrad: "Au revoir.",
+    seqMots: ["a","an", "lot", "soley"],
+    mots: [{ mot: "A", indice: "À" },{ mot: "An", indice: "Un" },{ mot: "Lot", indice: "Autre" },{ mot: "Soley", indice: "Soleil"}]
+  },
+  {
+    crExp: "Dèmen sé an kouyon ",
+      litTrad: "Demain est un imbécile.",
+      frTrad: "Carpe Diem.",
+      seqMots: ["dèmen","sé","an","kouyon"],
+      mots: [{mot: "Dèmen", indice: "Demain"}, { mot: "Sé", indice: "Est" }, { mot: "An", indice: "Un" }, { mot: "Kouyon", indice: "Imbécile" }]
+    },
+  {
+    crExp: "Asiré pa pétèt ",
+      litTrad: "Sûr, pas peut-être.",
+      frTrad: "Bien sûr.",
+      seqMots: ["asiré","pa","pétèt"],
+      mots: [{mot: "Asiré", indice: "Sûr"}, { mot: "Pa", indice: "Pas" }, { mot: "Pétèt", indice: "Peut-être" }]
+    },
+  {
+    crExp: "Bouch li pa ni dimanch ",
+      litTrad: "Sa bouche n'a pas de dimanche.",
+      frTrad: "C'est une piplette.",
+      seqMots: ["bouch","li","pa", "ni", "dimanch"],
+      mots: [{mot: "Bouch", indice: "Bouche"}, { mot: "Li", indice: "Sa/Son" }, { mot: "Pa", indice: "(marque la négation)" }, { mot: "Ni", indice: "a (avoir)" }, { mot: "Dimanch", indice: "Dimanche" }]
+    },
+  {
+    crExp: "Débrouya pa péché ",
+      litTrad: "La débrouillardise n'est pas un péché.",
+      frTrad: "Dans la vie, il faut être débrouillard.",
+      seqMots: ["débrouya","pa","péché"],
+      mots: [{mot: "Débrouya", indice: "Débrouillardise"}, { mot: "Pa", indice: "Pas" }, { mot: "Péché", indice: "(un) Péché" }]
+    },
     
-//   };
-// fillPage()
+  ];
 
+var collectionDifficile = [
+  {
+    crExp: "La vi a sé pa an bòl toloman ",
+    litTrad: "La vie n'est pas un bol de toloman.",
+    frTrad: "La vie n'est pas un long fleuve tranquille.",
+    seqMots: ["la","vi", "a", "sé", "pa", "an", "bòl", "toloman"],
+    mots: [{ mot: "La",},{ mot: "Vi"},{ mot: "A"},{ mot: "Sé"},{ mot: "Pa"},{ mot: "An"},{ mot: "Bòl"},{ mot: "Toloman"}]
+  },
+  {
+    crExp: "Pawòl an bouch pa chaj ",
+    litTrad: "Les mots dits n'ont pas de poids.",
+    frTrad: "Une parole n'engage à rien.",
+    seqMots: ["pawòl","an", "bouch", "pa", "chaj"],
+    mots: [{ mot: "Pawòl"},{ mot: "An"},{ mot: "Bouch"},{ mot: "Pa"},{ mot: "Chaj"}]
+  },
+  {
+    crExp: "Tan fè tan tan kité tan ",
+    litTrad: "Le temps a fait son temps, le temps a quitté son temps.",
+    frTrad: "Le temps passe vite.",
+    seqMots: ["tan","fè", "tan", "tan", "kité", "tan"],
+    mots: [{ mot: "Tan"},{ mot: "Fè"},{ mot: "Tan"},{ mot: "Tan"},{ mot: "Kité"}, { mot: "Tan"}] // ici l'indice ne va pas fonctionner car il y a plusieurs fois le mot temps et tu utilises indexOf pour avoir la place des mots.
+  },
+  {
+    crExp: "Ti grèn ka fè gro pié bwa ",
+    litTrad: "Les petites graines font de gros arbres.",
+    frTrad: "Petit à petit l'oiseau fait son nid.", // Équivalent à revoir
+    seqMots: ["ti","grèn", "ka", "fè", "gro", "pié", "bwa"],
+    mots: [{ mot: "Ti"},{ mot: "Grèn"},{ mot: "Ka"},{ mot: "Fè"},{ mot: "Gro"}, { mot: "Pié"}, { mot: "Bwa"}]
+  },
 
+  ];
 
 
 // var collection = [
@@ -146,24 +199,8 @@ var collection = [
 //     mots: [{ mot: "", indice: "" }]
 //   },
 
-//   {
-//     crExp: "Ti grèn ka fè gro pié bwa",
-//     litTrad: "Les petites graines font de gros arbres.",
-//     explication: "",
-//     frTrad: "Petit à petit l'oiseau fait son nid.",
-//     enTrad: "",
-//     seqMots: "",
-//     mots: [{ mot: "", indice: "" }]
-//   },
-//   {
-//     crExp: "Tan fè tan, tan kité tan",
-//     litTrad: "Le temps a fait son temps, le temps a quitté son temps.",
-//     explication: "",
-//     frTrad: "Le temps pass vite.",
-//     enTrad: "",
-//     seqMots: "",
-//     mots: [{ mot: "", indice: "" }]
-//   },
+
+
 //   {
 //     crExp: "Si ou pa dòmi an poulayé, ou pa sav si poul ka wonflé.",
 //     litTrad:
@@ -250,69 +287,15 @@ var collection = [
 //   },
 
 
-//   {
-//     crExp: "Pawòl an bouch pa chaj",
-//     litTrad: "La parole n'a pas de poids.",
-//     explication: "",
-//     frTrad: "La raison du plus fort est toujours la meilleure.",
-//     enTrad: "",
-//     seqMots: "",
-//     mots: [{ mot: "", indice: "" }]
-//   },
-//   {
-//     crExp: "Pawòl an bouch pa chaj",
-//     litTrad: "La parole n'a pas de poids.",
-//     explication: "",
-//     frTrad: "La raison du plus fort est toujours la meilleure.",
-//     enTrad: "",
-//     seqMots: "",
-//     mots: [{ mot: "", indice: "" }]
-//   }
 
   // Lèd ou lèd, ou pa méchan.
-  //     La vi a sé pa an bòl toloman.
-  // La vie n'est pas un bol de toloman.
-  // Signifie que la vie n'est pas rose.
   // Krapon viv lontan.
-  // Kannari ka di chodiè bonday nwè.
   // Kabrit ki pa malen, pa gra.
   // Kabrit kaka pilil, i konprann i sé dòktè.
   // Jansiv té la avan dan.
   // Fòk ou mantjé néyé pou aprann najé.
-  // Démen sé an kouyon.
   // Débouya pa péché.
   // Chak bèt a fé ka kléré pou nanm’yo.
-  // Bouch li pa ni dimanch.
-  // Asiré pa pétèt !
   // A fòs makak karésé ich li, i tjwé’y.
 // ]
 
-// function shuffle(array) {
-//   var currentIndex = array.length, temporaryValue, randomIndex;
-
-//   // While there remain elements to shuffle...
-//   while (0 !== currentIndex) {
-
-//     // Pick a remaining element...
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex -= 1;
-
-//     // And swap it with the current element.
-//     temporaryValue = array[currentIndex];
-//     array[currentIndex] = array[randomIndex];
-//     array[randomIndex] = temporaryValue;
-//   }
-
-//   return array;
-// }
-
-// var newCollection = shuffle(collection);
-// var questionCollection = [];
-
-// for (i=0; i<5; i++){ fillPage ()}
-
-// function fillPage(){
-//   questionCollection.push(newCollection[0]);
-//   newCollection.shift()
-//   console.log ("question:",questionCollection,"new:",newCollection, "--------");
-//   }

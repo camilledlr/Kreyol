@@ -26,7 +26,10 @@ setTimeout(function(){
 },10000)
 
 document.getElementById("skip-rules").onclick = function (){
-    window.location = "./jeu.html"
+    let level = localStorage.getItem("level");
+    if (level == "Facile") window.location = "./jeuFacile.html";
+    if (level == "Moyen") window.location = "./jeuMoyen.html";
+    if (level == "Difficile") window.location = "./jeuDifficile.html";
 }
 
 
