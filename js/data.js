@@ -35,15 +35,15 @@ var collection = [
       frTrad: "Premier arrivé, premier servi.",
       seqMots: ["bèf","douvan","bwè","dlo","klè"],
       mots: [{mot: "Bèf", indice: "Boeuf"}, { mot: "Douvan", indice: "Devant" }, { mot: "Bwè", indice: "Boire" }, { mot: "Dlo", indice: "Eau" }, { mot: "Klè", indice: "Claire" }]
-    },
+    }gg
 
-  {
-    crExp: "Kannari ka di chodiè bonday nwè ",
-      litTrad: "C'est la casseriole qui dit à la chaudière que ses fesses sont noires.",
-      frTrad: "C'est l'hôpital qui se fout de la charité",
-      seqMots: ["kannari","ka","di","chodiè","bonda'y", "nwè"],
-      mots: [{mot: "Kannari", indice: "Boeuf"}, { mot: "Ka", indice: "(marque présent indicatif)" }, { mot: "Di", indice: "Dit" }, { mot: "Chodiè", indice: "Chaudière" }, { mot: "Bonda'y", indice: "Ses fesses" }, { mot: "Nwè", indice: "Noir" } ]
-    },
+  // {
+  //   crExp: "Kannari ka di chodiè bonday nwè ",
+  //     litTrad: "C'est la casseriole qui dit à la chaudière que ses fesses sont noires.",
+  //     frTrad: "C'est l'hôpital qui se fout de la charité",
+  //     seqMots: ["kannari","ka","di","chodiè","bonda'y", "nwè"],
+  //     mots: [{mot: "Kannari", indice: "Boeuf"}, { mot: "Ka", indice: "(marque présent indicatif)" }, { mot: "Di", indice: "Dit" }, { mot: "Chodiè", indice: "Chaudière" }, { mot: "Bonda'y", indice: "Ses fesses" }, { mot: "Nwè", indice: "Noir" } ]
+  //   },
   ];
 
 var collectionFacile = [
